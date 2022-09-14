@@ -1,0 +1,41 @@
+{
+  "name": "io.cordova.phaser.parcel",
+  "displayName": "CordovaPhaserParcel",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application with Paser and Parcel 2 bundler",
+  "main": "index.js",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "targets": { 
+    "main": false,
+    "default": {
+      "distDir": "./www"
+    }
+  },
+  "scripts": {
+    "dev": "npx parcel dev src/index.html --host 127.0.0.1 -p 2000 --open",
+    "build": "parcel build src/index.html --no-optimize",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "parcelCleanPaths": [
+    "www"
+  ],
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Michal Zagrodzki",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "cordova-browser": "^6.0.0",
+    "cordova-ios": "^6.2.0",
+    "cordova-plugin-browsersync": "^1.1.0",
+    "parcel": "^2.7.0"
+  },
+  "cordova": {
+    "platforms": [
+      "browser"
+    ],
+    "plugins": {
+      "cordova-plugin-browsersync": {}
+    }
+  }
+}
