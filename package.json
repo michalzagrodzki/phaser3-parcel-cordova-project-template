@@ -5,14 +5,14 @@
   "description": "A sample Apache Cordova application with Paser and Parcel 2 bundler",
   "main": "index.js",
   "browserslist": "> 0.5%, last 2 versions, not dead",
-  "targets": { 
+  "targets": {
     "main": false,
     "default": {
       "distDir": "./www"
     }
   },
   "scripts": {
-    "dev": "npx parcel dev src/index.html --host 127.0.0.1 -p 2000 --open",
+    "dev": "npx parcel serve src/index.html --host 127.0.0.1 -p 2000 --open",
     "build": "parcel build src/index.html --no-optimize",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -38,5 +38,8 @@
     "plugins": {
       "cordova-plugin-browsersync": {}
     }
+  },
+  "dependencies": {
+    "phaser": "^3.55.2"
   }
 }
