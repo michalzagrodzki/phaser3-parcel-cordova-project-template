@@ -1,11 +1,18 @@
 import Phaser from "phaser";
-
 import sceneGame from './game'
 
-const cordova = document.createElement('script');
-cordova.setAttribute('type','text/javascript');
-cordova.setAttribute('src', 'cordova.js');
-document.getElementsByTagName("head")[0].appendChild(cordova);
+const loadCordova = document.createElement('script');
+loadCordova.setAttribute('type','text/javascript');
+loadCordova.setAttribute('src', 'cordova.js');
+document.getElementsByTagName("head")[0].appendChild(loadCordova);
+
+document.addEventListener('deviceready', onDeviceReady, false);
+
+function onDeviceReady() {
+    // Cordova is now initialized. Have fun!
+    console.log('Running cordova-' + cordova.platformId + '@' + cordova.version);
+    document.getElementById('deviceready').classList.add('ready');
+}
 
 const config = {
   type: Phaser.AUTO,
