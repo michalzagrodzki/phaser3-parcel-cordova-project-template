@@ -1,9 +1,9 @@
 import Phaser from 'phaser';
-import sky_img from 'url:~/src/assets/sky.png';
-import ground_img from 'url:~/src/assets/platform.png';
-import star_img from 'url:~/src/assets/star.png';
-import bomb_img from 'url:~/src/assets/bomb.png';
-import dude_img from 'url:~/src/assets/dude.png';
+import sky_img from './assets/sky.png';
+import ground_img from './assets/platform.png';
+import star_img from './assets/star.png';
+import bomb_img from './assets/bomb.png';
+import dude_img from './assets/dude.png';
 
 export default class GameScene extends Phaser.Scene
 {
