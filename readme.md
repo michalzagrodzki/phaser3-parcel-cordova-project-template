@@ -45,6 +45,7 @@
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
+        <li><a href="#building">Building</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -87,33 +88,59 @@ This game was built with following technologies.
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+To start working with boilerplate, please follow instructions below.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+You need to have following packages installed to work with boilerplate
+
 * npm
   ```sh
   npm install npm@latest -g
   ```
 
+* parcel
+  ```sh
+  npm install parcel -g
+  ```
+
+* cordova
+  ```sh
+  npm install cordova -g
+  ```
+
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+Please follow instructions below for installation and running of boilerplate
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/michalzagrodzki/Project-Name.git
    ```
-3. Install NPM packages
+2. Install NPM packages
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+4. Run boilerplate through parcel
+  ```sh
+   npm run dev
+   ```
+  
+### Building
+
+In order to build and run your boilerplate in emulator please follow instructions below
+
+1. Build boilerplate through parcel
+  ```sh
+   npm run build
+   ```
+2. Run boilerplate in browser through cordova
+  ```sh
+   cordova run browser
+   ```
+3. Run boilerplate in iOS emulator through cordova
+  ```sh
+   cordova run ios
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -123,9 +150,11 @@ _Below is an example of how you can instruct your audience on installing and set
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+This boilerplate is a starting point for further development of games for mobile platforms.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+Start with modyfing code in file ```game.js```, and then add new scenes in folder ```src``` and include them in file ```index.js```.
+
+_For guidance and examples how to develop games with Phaser, please refer to the [Documentation](https://phaser.io)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -135,12 +164,13 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 ## Roadmap
 
 - [ ] Add Changelog
+- [ ] Add Deployment Steps
 - [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
+- [ ] Add Support for Typescript
 - [ ] Multi-language Support
     - [ ] Spanish
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/michalzagrodzki/Best-README-Template/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
