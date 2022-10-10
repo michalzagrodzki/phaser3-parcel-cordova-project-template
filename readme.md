@@ -243,9 +243,9 @@ Following resources were helpful in building this boilerplate:
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/michaelzagrodzki/
 [product-screenshot]: images/screenshot.png
-[Phaser]: https://img.shields.io/badge/phaser3-000000?style=for-the-badge&logo=phaser&logoColor=white
+[Phaser]: https://img.shields.io/badge/phaser3-000000?style=for-the-badge&logo=Lapce&logoColor=white
 [Phaser-url]: https://phaser.io/
-[Parcel]: https://img.shields.io/badge/Parcel-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[Parcel]: https://img.shields.io/badge/Parcel-20232A?style=for-the-badge&logo=pkgsrc&logoColor=61DAFB
 [Parcel-url]: https://parceljs.org/
-[Cordova]: https://img.shields.io/badge/Cordova-35495E?style=for-the-badge&logo=cordova&logoColor=4FC08D
+[Cordova]: https://img.shields.io/badge/Cordova-35495E?style=for-the-badge&logo=Apache+Cordova&logoColor=4FC08D
 [Cordova-url]: https://cordova.apache.org/
