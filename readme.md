@@ -78,9 +78,9 @@ This template will be developed further on. There will be coming new features in
 
 This game was built with following technologies.
 
-* [![Phaser][Phaser.js]][Phaser-url]
-* [![Parcel][Parcel.js]][Parcel-url]
-* [![Cordova][Cordova.js]][Cordova-url]
+* [![Phaser][Phaser]][Phaser-url]
+* [![Parcel][Parcel]][Parcel-url]
+* [![Cordova][Cordova]][Cordova-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
