@@ -12,7 +12,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/michalzagrodzki/phaser3-parcel-cordova-project-template">
+  <a href="https://user-images.githubusercontent.com/4341982/195147759-9ef71358-6e69-469b-9f0f-4209c46f58a3.jpg">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
