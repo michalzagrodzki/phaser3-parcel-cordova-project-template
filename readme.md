@@ -61,7 +61,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://user-images.githubusercontent.com/4341982/195149956-d6fa9e17-c320-491a-a4f5-a365665dc961.jpg)
 
 This mobile game template is a boilerplate with ready build and development flow. You could use it for prototyping your ideas, game jams, start point for game development or translating your browser games to mobile environment. Template uses assets from official Phaser platform game tutorial.
 
@@ -242,7 +242,7 @@ Following resources were helpful in building this boilerplate:
 [license-url]: https://github.com/michalzagrodzki/phaser3-parcel-cordova-project-template/blob/master/license.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/michaelzagrodzki/
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: https://user-images.githubusercontent.com/4341982/195149956-d6fa9e17-c320-491a-a4f5-a365665dc961.jpg
 [Phaser]: https://img.shields.io/badge/phaser3-000000?style=for-the-badge&logo=Lapce&logoColor=white
 [Phaser-url]: https://phaser.io/
 [Parcel]: https://img.shields.io/badge/Parcel-20232A?style=for-the-badge&logo=pkgsrc&logoColor=61DAFB
