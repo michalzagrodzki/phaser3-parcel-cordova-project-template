@@ -122,7 +122,7 @@ Please follow instructions below for installation and running of boilerplate
    npm install
    ```
 4. Run boilerplate through parcel
-  ```sh
+   ```sh
    npm run dev
    ```
   
