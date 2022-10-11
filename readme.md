@@ -206,7 +206,7 @@ Distributed under the MIT License. See `license.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@michalzagrodzki](https://twitter.com/michalzagrodzki) - email@example.com
+Your Name - [@michalzagrodzki](https://twitter.com/michalzagrodzki)
 
 Project Link: [https://github.com/michalzagrodzki/phaser3-parcel-cordova-project-template](https://github.com/michalzagrodzki/phaser3-parcel-cordova-project-template)
 
