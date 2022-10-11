@@ -13,7 +13,7 @@
 <br />
 <div align="center">
   <a href="https://user-images.githubusercontent.com/4341982/195147759-9ef71358-6e69-469b-9f0f-4209c46f58a3.jpg">
-    <img src="https://user-images.githubusercontent.com/4341982/195147759-9ef71358-6e69-469b-9f0f-4209c46f58a3.jpg" alt="Logo" width="80" height="80">
+    <img src="https://user-images.githubusercontent.com/4341982/195147759-9ef71358-6e69-469b-9f0f-4209c46f58a3.jpg" alt="Logo">
   </a>
 
   <h3 align="center">Mobile Game</h3>
