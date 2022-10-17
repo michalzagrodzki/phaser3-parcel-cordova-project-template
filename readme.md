@@ -121,6 +121,10 @@ Please follow instructions below for installation and running of boilerplate
    ```sh
    npm install
    ```
+3. Install browser platform for cordova
+   ```sh
+   cordova platform add browser
+   ```
 4. Run boilerplate through parcel
    ```sh
    npm run dev
