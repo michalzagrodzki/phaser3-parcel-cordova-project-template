@@ -26,9 +26,10 @@ const config = {
   ]
 };
 
-if (process.env.NODE_ENV === 'development'){
+if (process.env.NODE_ENV === 'development') {
   new Phaser.Game(config);
-} else if (process.env.NODE_ENV === 'production') {
+} 
+else if (process.env.NODE_ENV === 'production') {
   const loadCordova = document.createElement('script');
   loadCordova.setAttribute('type','text/javascript');
   loadCordova.setAttribute('src', 'cordova.js');
