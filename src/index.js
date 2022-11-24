@@ -26,7 +26,7 @@ const config = {
   ]
 };
 
-if (process.env.NODE_ENV === 'development') {
+if (process.env.NODE_ENV !== 'production') {
   new Phaser.Game(config);
 } 
 else if (process.env.NODE_ENV === 'production') {
