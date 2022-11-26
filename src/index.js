@@ -29,18 +29,17 @@ const config = {
 if (process.env.NODE_ENV !== 'production') {
   new Phaser.Game(config);
 } 
-else if (process.env.NODE_ENV === 'production') {
+else {
   const loadCordova = document.createElement('script');
   loadCordova.setAttribute('type','text/javascript');
   loadCordova.setAttribute('src', 'cordova.js');
   document.getElementsByTagName("head")[0].appendChild(loadCordova);
   document.addEventListener('deviceready', onDeviceReady, false);
-
   function onDeviceReady() {
       // Cordova is now initialized. Have fun!
-      new Phaser.Game(config);
       console.log('Running cordova-' + cordova.platformId + '@' + cordova.version);
       document.getElementById('deviceready').classList.add('ready');
+      new Phaser.Game(config);
   }
 }
 
