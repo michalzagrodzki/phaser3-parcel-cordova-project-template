@@ -13,9 +13,9 @@
   },
   "scripts": {
     "dev": "npx parcel serve src/index.html --host 127.0.0.1 -p 2000 --open",
-    "build": "parcel build src/index.html --no-optimize --no-source-maps",
+    "build": "node scripts/beforeBuild && parcel build src/index.html --no-optimize --no-source-maps --no-content-hash",
     "ios": "cordova emulate ios",
-    "web": "cordova run browser",
+    "web": "cordova run browser -- --live-reload",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "source": "src/index.html",
@@ -28,7 +28,8 @@
     "cordova-browser": "^6.0.0",
     "cordova-ios": "^6.2.0",
     "cordova-plugin-browsersync": "^1.1.0",
-    "parcel": "^2.7.0"
+    "parcel": "^2.7.0",
+    "rimraf": "^3.0.2"
   },
   "cordova": {
     "platforms": [
