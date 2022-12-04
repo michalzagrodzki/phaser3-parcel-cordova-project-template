@@ -13,11 +13,12 @@
   },
   "scripts": {
     "dev": "npx parcel serve src/index.html --host 127.0.0.1 -p 2000 --open",
-    "build": "node scripts/beforeBuild && parcel build src/index.html --no-optimize --no-source-maps --no-content-hash",
+    "build": "node scripts/beforeBuild",
     "ios": "cordova emulate ios",
     "web": "cordova run browser -- --live-reload",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "type": "module",
   "source": "src/index.html",
   "keywords": [
     "ecosystem:cordova"
@@ -25,10 +26,12 @@
   "author": "Michal Zagrodzki",
   "license": "Apache-2.0",
   "devDependencies": {
+    "@parcel/config-default": "^2.8.0",
+    "@parcel/core": "^2.8.0",
     "cordova-browser": "^6.0.0",
     "cordova-ios": "^6.2.0",
     "cordova-plugin-browsersync": "^1.1.0",
-    "parcel": "^2.7.0",
+    "parcel": "^2.8.0",
     "rimraf": "^3.0.2"
   },
   "cordova": {
