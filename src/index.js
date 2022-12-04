@@ -34,12 +34,11 @@ else {
   loadCordova.setAttribute('type','text/javascript');
   loadCordova.setAttribute('src', 'cordova.js');
   document.getElementsByTagName("head")[0].appendChild(loadCordova);
-  document.addEventListener('deviceready', onDeviceReady, false);
-  function onDeviceReady() {
-      // Cordova is now initialized. Have fun!
-      console.log('Running cordova-' + cordova.platformId + '@' + cordova.version);
-      document.getElementById('deviceready').classList.add('ready');
-      new Phaser.Game(config);
-  }
+  document.addEventListener('deviceready', () => {
+    // Cordova is now initialized. Have fun!
+    console.log('Running cordova-' + cordova.platformId + '@' + cordova.version);
+    document.getElementById('deviceready').classList.add('ready');
+    new Phaser.Game(config);
+  });
 }
 
