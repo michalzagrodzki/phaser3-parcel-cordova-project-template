@@ -1,4 +1,4 @@
-import Phaser from 'phaser';
+//import Phaser from 'phaser';
 import sky_img from './assets/sky.png';
 import ground_img from './assets/platform.png';
 import star_img from './assets/star.png';
@@ -9,7 +9,7 @@ export default class GameScene extends Phaser.Scene
 {
 	constructor()
 	{
-    super({key: 'game'});
+    super('GameScene');
 
     this.player;
     this.stars;
@@ -27,7 +27,6 @@ export default class GameScene extends Phaser.Scene
     this.load.image('ground', ground_img);
     this.load.image('star', star_img);
     this.load.image('bomb', bomb_img);
-    // this.load.spritesheet('dude', './assets/dude.png', { frameWidth: 32, frameHeight: 48 });
     this.load.spritesheet('dude', dude_img, { frameWidth: 32, frameHeight: 48 });
   }
 
@@ -130,7 +129,6 @@ export default class GameScene extends Phaser.Scene
             bomb.setCollideWorldBounds(true);
             bomb.setVelocity(Phaser.Math.Between(-200, 200), 20);
             bomb.allowGravity = false;
-
         }
     }
 

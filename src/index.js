@@ -1,5 +1,5 @@
 import Phaser from "phaser";
-import sceneGame from './game'
+import GameScene from './game.js'
 
 const config = {
   type: Phaser.AUTO,
@@ -19,10 +19,13 @@ const config = {
     }
   },
   scale: {
-    mode: Phaser.Scale.FIT
+    mode: Phaser.Scale.FIT,
+    autoCenter: Phaser.Scale.CENTER_BOTH,
+    width: window.innerWidth,
+    height: window.innerHeight
   },
   scene: [
-    sceneGame
+    GameScene
   ]
 };
 
@@ -30,15 +33,11 @@ if (process.env.NODE_ENV !== 'production') {
   new Phaser.Game(config);
 } 
 else {
-  const loadCordova = document.createElement('script');
-  loadCordova.setAttribute('type','text/javascript');
-  loadCordova.setAttribute('src', 'cordova.js');
-  document.getElementsByTagName("head")[0].appendChild(loadCordova);
+  new Phaser.Game(config);
   document.addEventListener('deviceready', () => {
-    // Cordova is now initialized. Have fun!
     console.log('Running cordova-' + cordova.platformId + '@' + cordova.version);
-    document.getElementById('deviceready').classList.add('ready');
     new Phaser.Game(config);
+    navigator.splashscreen.hide();
   });
 }
 
