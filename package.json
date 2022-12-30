@@ -7,7 +7,7 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "dev": "npx parcel serve src/index.html --host 127.0.0.1 -p 2000 --open",
-    "build": "webpack",
+    "build": "node scripts/beforeBuild",
     "ios": "cordova emulate ios",
     "web": "cordova run browser -- --live-reload",
     "test": "echo \"Error: no test specified\" && exit 1"

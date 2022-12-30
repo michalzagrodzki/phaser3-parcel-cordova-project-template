@@ -36,7 +36,7 @@ else {
   new Phaser.Game(config);
   document.addEventListener('deviceready', () => {
     console.log('Running cordova-' + cordova.platformId + '@' + cordova.version);
-   //new Phaser.Game(config);
+    // new Phaser.Game(config);
     navigator.splashscreen.hide();
   });
 }
