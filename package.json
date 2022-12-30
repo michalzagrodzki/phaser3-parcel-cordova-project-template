@@ -7,7 +7,7 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "dev": "npx parcel serve src/index.html --host 127.0.0.1 -p 2000 --open",
-    "build": "webpack",
+    "build": "node scripts/beforeBuild",
     "ios": "cordova emulate ios",
     "web": "cordova run browser -- --live-reload",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -25,14 +25,9 @@
     "cordova-ios": "^6.2.0",
     "cordova-plugin-browsersync": "^1.1.0",
     "cordova-plugin-whitelist": "^1.3.4",
-    "css-loader": "^6.7.3",
-    "html-loader": "^4.2.0",
-    "html-webpack-plugin": "^5.5.0",
     "parcel": "^2.8.0",
     "parcel-bundler": "^1.12.5",
-    "rimraf": "^3.0.2",
-    "style-loader": "^3.3.1",
-    "webpack": "^5.75.0"
+    "rimraf": "^3.0.2"
   },
   "cordova": {
     "platforms": [
