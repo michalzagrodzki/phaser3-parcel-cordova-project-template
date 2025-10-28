@@ -37,6 +37,7 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
+        <li><a href="#project-structure">Project Structure</a></li>
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
@@ -63,16 +64,33 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://user-images.githubusercontent.com/4341982/195149956-d6fa9e17-c320-491a-a4f5-a365665dc961.jpg)
 
-This mobile game template is a boilerplate with ready build and development flow. You could use it for prototyping your ideas, game jams, start point for game development or translating your browser games to mobile environment. Template uses assets from official Phaser platform game tutorial.
+This starter brings Phaser 3, Parcel, and Apache Cordova together so you can ship a mobile-ready prototype in minutes. Parcel 2 powers the development server, while a custom build script outputs Cordova-friendly bundles to `www/`. The default scene recreates the official Phaser platformer tutorial, complete with physics, collectibles, and touch-ready input hooks.
 
-Main goals of project:
-* Development and build flow ready - no time used for config
-* Boilerplate for mobile games: assets, scenes and gameflow is implemented
-* Mobile game comparison boilerplate - excellent for moving from browser to mobile
+Why this template helps you move fast:
+* Cordova configuration for Browser and iOS platforms is already wired up, including plugin stubs and splash handling.
+* Parcel dev tooling delivers hot-reload while keeping asset imports simple through ES modules.
+* A production build script injects `cordova.js` automatically and produces ready-to-run assets for emulator or device testing.
 
-This template will be developed further on. There will be coming new features in future. You are encouraged to fill in requests through issues or PRs. All inputs are highly appreciated.
+The project will keep evolving—issues and pull requests are welcome if you spot gaps or want to contribute enhancements.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Project Structure
+
+```
+phaser3-parcel-cordova-project-template/
+├── src/                # Game source (HTML shell, Phaser entry, scenes, assets, styles)
+├── scripts/            # Build utilities (Parcel v1 bundler script for Cordova output)
+├── config.xml          # Cordova application manifest and platform preferences
+├── package.json        # npm scripts, dependencies, and Cordova platform definitions
+├── license.txt         # Project license (MIT)
+└── readme.md           # Project overview and contributor docs
+```
+
+Key runtime files:
+- `src/index.js` starts the Phaser game and waits for `deviceready` on devices.
+- `src/game.js` hosts the sample platformer scene, assets, and physics configuration.
+- `scripts/beforeBuild.js` bundles to `www/` and injects the `cordova.js` script tag post-build.
 
 ### Built With
 
@@ -92,59 +110,51 @@ To start working with boilerplate, please follow instructions below.
 
 ### Prerequisites
 
-You need to have following packages installed to work with boilerplate
+You need the following tooling before running the project:
 
-* npm
+* Node.js & npm – install from [nodejs.org](https://nodejs.org/) or via a version manager.
+* Cordova CLI (global)
   ```sh
-  npm install npm@latest -g
-  ```
-
-* parcel
-  ```sh
-  npm install parcel -g
-  ```
-
-* cordova
-  ```sh
-  npm install cordova -g
+  npm install -g cordova
   ```
 
 ### Installation
 
-Please follow instructions below for installation and running of boilerplate
+Use the steps below to install dependencies and boot the template locally.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/michalzagrodzki/Project-Name.git
+   git clone https://github.com/michalzagrodzki/phaser3-parcel-cordova-project-template.git
+   cd phaser3-parcel-cordova-project-template
    ```
-2. Install NPM packages
+2. Install dependencies
    ```sh
    npm install
    ```
-3. Install browser platform for cordova
+3. Add the Cordova browser platform (skip if already present)
    ```sh
    cordova platform add browser
    ```
-4. Run boilerplate through parcel
+4. Start the Parcel dev server with hot reload
    ```sh
    npm run dev
    ```
   
 ### Building
 
-In order to build and run your boilerplate in emulator please follow instructions below
+Use these commands to bundle the project for Cordova and launch the provided targets.
 
-1. Build boilerplate through parcel
-  ```sh
+1. Create a production bundle for Cordova
+   ```sh
    npm run build
    ```
-2. Run boilerplate in browser through cordova
-  ```sh
-   cordova run browser
+2. Run the bundled app in a Cordova browser shell
+   ```sh
+   npm run web
    ```
-3. Run boilerplate in iOS emulator through cordova
-  ```sh
-   cordova run ios
+3. Launch the iOS emulator (requires Xcode tooling)
+   ```sh
+   npm run ios
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -156,9 +166,9 @@ In order to build and run your boilerplate in emulator please follow instruction
 
 This boilerplate is a starting point for further development of games for mobile platforms.
 
-Start with modyfing code in file ```game.js```, and then add new scenes in folder ```src``` and include them in file ```index.js```.
+Start by modifying the logic in `src/game.js`, then add new scenes under `src/` and register them within the `scene` array in `src/index.js`.
 
-_For guidance and examples how to develop games with Phaser, please refer to the [Documentation](https://phaser.io)_
+_For guidance and examples on how to develop games with Phaser, please refer to the [Documentation](https://phaser.io)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
